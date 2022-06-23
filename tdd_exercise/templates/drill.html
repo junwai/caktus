@@ -1,1 +1,10 @@
-<h1>Drill</h1>
+<h1> Guess the crossword entry based on the clue</h1>
+{% if incorrect %}
+<h2> Sorry, Try Again </h2>
+{% endif %}
+{{ clue }}
+
+<form action='/art/drill'>
+    Guess : <input type="text" name="guess"><br>
+    <input type="submit">
+</form>
